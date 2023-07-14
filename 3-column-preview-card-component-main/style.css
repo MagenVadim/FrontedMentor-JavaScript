@@ -1,0 +1,71 @@
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+body{
+    background-color: bisque;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+.item{
+    width: calc(100%/3);
+    min-height: 25rem;
+    max-width: 13rem;
+    padding: 2.5rem;
+    position:relative;
+    color: white;
+}
+.item h1{
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+}
+.item.sedans{
+    background-color: var(--Bright-orange);
+    border-radius: 7px 0 0 7px;
+}
+.item.suvs{
+    background-color: var(--Dark-cyan);
+}
+.item.luxury{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 7px 7px 0;
+}
+.item p{
+    font-family: "Lexend Deca", sans-serif;
+    line-height:1.5;
+    color: hsl(0, 0%, 95%); 
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
+}
+.item button{
+    position: absolute;
+    text-align: center;
+    padding: 12px 18px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    bottom:2rem;
+    margin-bottom: 2px;    
+}
+.item.sedans button{
+    color:var(--Bright-orange)
+}
+.item.suvs button{
+    color:var(--Dark-cyan)
+}
+.item.luxury button{
+    color:var(--Very-dark-cyan)
+}
+.item button:hover{    
+    color:hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", cursive;
+    border-color: hsl(0, 0%, 95%);
+    background-color: transparent;
+}
