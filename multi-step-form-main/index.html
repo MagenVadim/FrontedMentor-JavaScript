@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="card">
+
+        <div class="steps-box">
+            <div class="steps-info">
+                <div class="step">
+                    <span class="active">1</span>
+                    <div class="step-blog">
+                        <p class="step-number">Step 1</p>
+                        <p class="step-discription">your info</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class>2</span>
+                    <div class="step-blog">
+                        <p class="step-number">Step 2</p>
+                        <p class="step-discription">select plan</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class>3</span>
+                    <div class="step-blog">
+                        <p class="step-number">Step 3</p>
+                        <p class="step-discription">add-ons</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class>4</span>
+                    <div class="step-blog">
+                        <p class="step-number">Step 4</p>
+                        <p class="step-discription">summary</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right-section">
+            <!-- ***************** STEP 1 - YOUR INFO ************************* -->
+
+            <div class="stepOne">
+
+                <form id="form" action="/">
+                    <h1>Personal info</h1>
+                    <p class="personal-info">Please provide your name, email address, and phone number.</p>                    
+    
+                    <div class="card-form">
+                        <div class="title-field">
+                            <label for="card-name">Name</label>
+                            <p class="error-message"></p>
+                        </div>                        
+                        <input type="text" placeholder="e.g. Jane Appleceed" id="card-name" required>                        
+                    </div>
+    
+                    <div class="card-form">
+                        <div class="title-field">
+                            <label for="email-address">Email Address</label>
+                            <p class="error-message"></p>
+                        </div>                        
+                        <input type="text" placeholder="e.g. email@address.com" id="email-address" required>
+                    </div>
+                  
+                    <div class="card-form">
+                        <div class="title-field">
+                            <label for="phone-number">Phone Number</label>
+                            <p class="error-message"></p>
+                        </div>       
+                        
+                        <input type="number" placeholder="e.g. +1 234 567 890" id="phone-number" required>
+                    </div>
+                </form>
+
+            </div>
+
+        <!-- ******************* STEP 2 - month SELECT PLAN *********************** -->
+            <div class="stepTwo hidden">
+                <h1>Select your plan</h1>
+                <p class="personal-info">You have the the option of monthly or yearly billing.</p>
+
+                <div class="type-of-plan-monthly">
+                    <div class="arcade plan" id="arcade-plan-monthly">
+                        <div class="frame-plan">
+                            <img class="image-plan" src="assets/images/icon-arcade.svg" alt="icon">
+                            <p class="plan-title">Arcade</p>
+                            <p class="price">$9/mo</p>
+                        </div>
+                    </div>
+                    <div class="advanced plan" id="advanced-plan-monthly">
+                        <div class="frame-plan">
+                            <img class="image-plan" src="assets/images/icon-advanced.svg" alt="icon">
+                            <p class="plan-title">Advanced</p>
+                            <p class="price">$12/mo</p>
+                        </div>
+                    </div>
+                    <div class="pro plan" id="pro-plan-monthly">
+                        <div class="frame-plan">
+                            <img class="image-plan" src="assets/images/icon-pro.svg" alt="icon">
+                            <p class="plan-title">Pro</p>
+                            <p class="price">$15/mo</p>
+                        </div>
+                    </div>
+                </div>
+                    <!-- ****** year SELECT PLAN ******* -->
+                <div class="type-of-plan-yearly hidden">
+                    <div class="arcade plan" id="arcade-plan-yearly">
+                        <div class="frame-plan">
+                            <img class="image-plan" src="assets/images/icon-arcade.svg" alt="icon">
+                            <p class="plan-title">Arcade</p>
+                            <p class="price">$90/yr</p>
+                            <p class="two-month-free">2 month free</p>
+                        </div>
+                    </div>
+                    <div class="advanced plan" id="advanced-plan-yearly">
+                        <div class="frame-plan">
+                            <img class="image-plan" src="assets/images/icon-advanced.svg" alt="icon">
+                            <p class="plan-title">Advanced</p>
+                            <p class="price">$120/yr</p>
+                            <p class="two-month-free">2 month free</p>
+                        </div>
+                    </div>
+                    <div class="pro plan" id="pro-plan-yearly">
+                        <div class="frame-plan">
+                            <img class="image-plan" src="assets/images/icon-pro.svg" alt="icon">
+                            <p class="plan-title">Pro</p>
+                            <p class="price">$150/yr</p>
+                            <p class="two-month-free">2 month free</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="warn">You should select a plan before move to the next step.</p>
+                <div class="toggle-switch">
+                    <p class="period checked">Monthly</p>
+                    <input type="checkbox" class="switcher">
+                    <p class="period unchecked">Yearly</p>
+                </div>
+            </div>
+        <!-- ******************* STEP 3 - ADD-ONS *********************** -->
+            <div class="stepThree hidden">
+                <h1>Pick add-ons</h1>
+                <p class="personal-info">Add-ons help your gaming experience.</p>
+                
+
+                <div class="services">
+
+                    <div class="additional" id="add-multiplayer">
+                        <div class="left-checkbox">
+                            <div class="checkbox">
+                                <input type="checkbox" class="checkbox_price" id="online_service">
+                            </div>
+                            <div class="info-service">
+                                <p class="title-info">Online service</p>
+                                <p class="content-service">Access to multiplayer games</p>
+                            </div>
+                        </div>
+                        <div class="price-service">
+                            <p class="add-price-monthly">+1$/mo</p>
+                            <p class="add-price-yearly hidden">+10$/yr</p>
+                        </div>
+                    </div>
+        
+                    <div class="additional" id="add-storage">
+                        <div class="left-checkbox">
+                            <div class="checkbox">
+                                <input type="checkbox" class="checkbox_price" id="larger_storage">
+                            </div>
+                            <div class="info-service">
+                                <p class="title-info">Larger storage</p>
+                                <p class="content-service">Extra 1TB of cloud save</p>
+                            </div>
+                        </div>
+                        <div class="price-service">
+                            <p class="add-price-monthly">+2$/mo</p>
+                            <p class="add-price-yearly hidden">+20$/yr</p>
+                        </div>
+                    </div>
+        
+                    <div class="additional" id="add-customizable">
+                        <div class="left-checkbox">
+                            <div class="checkbox">
+                                <input type="checkbox" class="checkbox_price" id="customizable_profile">
+                            </div>
+                            <div class="info-service">
+                                <p class="title-info">Customizable Profile</p>
+                                <p class="content-service">Custome theme on your profile</p>
+                            </div>
+                        </div>
+                        <div class="price-service">
+                            <p class="add-price-monthly">+2$/mo</p>
+                            <p class="add-price-yearly hidden">+20$/yr</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        <!-- ******************* STEP 4 - ADD-ONS *********************** -->
+            <div class="stepFour hidden">
+                <h1>Finishing up</h1>
+                <p class="personal-info">Double-check everything looks OK before confirming.</p>
+
+                <div class="finish_tarif">
+                    <div class="tarif">
+                        <p class="finish_tarif_plane"></p>
+                        <p class="finish_tarif_price"></p>
+                    </div>
+                    <a class="change" href="#">Change</a>
+                    <p class="line-border hidden">     __________________________________________________   </p>
+                    
+                    <div class="add_finish_tarif online hidden" id="add_online_service">
+                        <p class="add_finish_tarif_plane" id="online_service_plane"></p>
+                        <p class="add_finish_tarif_price" id="online_service_price"></p>
+                    </div>    
+                    <div class="add_finish_tarif storage hidden" id="add_larger_storage">
+                        <p class="add_finish_tarif_plane" id="larger_storage_plane"></p>
+                        <p class="add_finish_tarif_price" id="larger_storage_price"></p>
+                    </div> 
+                    <div class="add_finish_tarif customizable hidden" id="add_customizable_profile">
+                        <p class="add_finish_tarif_plane" id="customizable_profile_plane"></p>
+                        <p class="add_finish_tarif_price" id="customizable_profile_price"></p>
+                    </div>
+                    <div class="total_summary">
+                        <div class="total_title">Total (per month)</div>
+                        <div class="total_price"></div>
+                    </div>    
+                </div>                          
+            </div>
+
+        <!-- ******************* STEP CONFIRMATION *********************** -->
+        <div class="thanking hidden">
+            <div class="image-thanking"></div>
+            <h1>Thank you!</h1>
+            <p class="thanking-info">
+                Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgamong.com.
+            </p>
+        </div>
+        </div>      
+
+
+
+        <!-- ***************BUTTONS*************************** -->
+        <div class="button-next-step">
+            <button class="next-step">Next Step</button>
+        </div>
+
+        <div class="button-confirm-step hidden">
+            <button class="confirm-step">Confirm</button>
+        </div>
+
+        <div class="button-go-back hidden">
+            <button class="go-back">Go Back</button>
+        </div>
+
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
